@@ -1,0 +1,6 @@
+LOAD DATA INFILE '/home/pi/Temp/the_oscar_award.csv' 
+INTO TABLE the_oscar_award 
+FIELDS TERMINATED BY ',' 
+OPTIONALLY ENCLOSED BY '\"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
