@@ -1,1 +1,0 @@
-CREATE TABLE `oscar_group_dim` (`id` int NOT NULL, PRIMARY KEY (`id`));
