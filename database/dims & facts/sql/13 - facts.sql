@@ -1,7 +1,7 @@
 CREATE TABLE `facts` (
-    `id` int NOT NULL,
+    `id` int AUTO_INCREMENT NOT NULL,
     `genre_group_id` int NOT NULL,
-    `oscar_group_id` int NOT NULL,
+    `oscar_group_id` int,
     `time_dim` int NOT NULL,
     `director_id` int NOT NULL,
     `actor_group_id` int NOT NULL,

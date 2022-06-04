@@ -1,4 +1,5 @@
 CREATE TABLE `oscar_combo` (
+    `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `osacr_group_id` int NOT NULL,
     `oscar_dim_id` int NOT NULL,
     KEY `FK_171` (`osacr_group_id`),

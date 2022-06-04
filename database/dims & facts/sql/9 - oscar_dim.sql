@@ -1,5 +1,5 @@
 CREATE TABLE `osacar_dim` (
-    `id` int NOT NULL,
+    `id` int AUTO_INCREMENT NOT NULL,
     `category_id` int NOT NULL,
     `winner` boolean NOT NULL,
     PRIMARY KEY (`id`),

@@ -1,4 +1,5 @@
 CREATE TABLE `actor_combo` (
+    `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `actor_group_id` int NOT NULL,
     `person_id` int NOT NULL,
     KEY `FK_118` (`actor_group_id`),

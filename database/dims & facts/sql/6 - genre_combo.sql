@@ -1,4 +1,5 @@
 CREATE TABLE `genre_combo` (
+    `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `genre_group_id` int NOT NULL,
     `genre_id` int NOT NULL,
     KEY `FK_105` (`genre_id`),
