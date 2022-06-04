@@ -1,17 +1,15 @@
-using System.Linq;
+namespace Etl.Services;
 
-namespace Etl;
-
-public class Stage
+public class ImdbTop1000Manipulator : IStageManipulator<ImdbTop1000>
 {
     private readonly termpaperContext _ctx;
 
-    public Stage(termpaperContext context)
+    public ImdbTop1000Manipulator(termpaperContext context)
     {
         _ctx = context;
     }
 
-    public void UploadNew<ImdbTop1000>()
+    public void UploadNew()
     {
         using var ctx = new termpaperContext();
         var imdbTop1000 = ctx.ImdbTop1000s;
@@ -173,5 +171,10 @@ public class Stage
             
             _ctx.SaveChanges();
         }
+    }
+
+    public void Update(ImdbTop1000 updatedItem)
+    {
+        throw new NotImplementedException();
     }
 }
