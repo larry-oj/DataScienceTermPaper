@@ -464,6 +464,14 @@ namespace Etl.Data
                 entity.Property(e => e.CategoryId)
                     .HasColumnType("int(11)")
                     .HasColumnName("category_id");
+                
+                entity.Property(e => e.CeremonyNum)
+                    .HasColumnType("int(11)")
+                    .HasColumnName("ceremony_num");
+                
+                entity.Property(e => e.CeremonyYear)
+                    .HasColumnType("int(11)")
+                    .HasColumnName("ceremony_year");
 
                 entity.Property(e => e.Winner).HasColumnName("winner");
 
@@ -476,7 +484,10 @@ namespace Etl.Data
 
             modelBuilder.Entity<OscarCombo>(entity =>
             {
-                entity.HasNoKey();
+                entity.Property(e => e.Id)
+                    .HasColumnType("int(11)")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnName("id");
 
                 entity.ToTable("oscar_combo");
 

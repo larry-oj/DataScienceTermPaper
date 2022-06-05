@@ -5,6 +5,7 @@ namespace Etl.Data.Models
 {
     public partial class OscarCombo
     {
+        public int Id { get; set; }
         public int OsacrGroupId { get; set; }
         public int OscarDimId { get; set; }
 

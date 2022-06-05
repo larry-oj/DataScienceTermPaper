@@ -9,8 +9,8 @@ namespace Etl.Data.Models
         public int GenreGroupId { get; set; }
         public int? OscarGroupId { get; set; }
         public int TimeDim { get; set; }
-        public int DirectorId { get; set; }
-        public int ActorGroupId { get; set; }
+        public int? DirectorId { get; set; }
+        public int? ActorGroupId { get; set; }
         public int FilmId { get; set; }
         public double? Rating { get; set; }
         public int? Score { get; set; }

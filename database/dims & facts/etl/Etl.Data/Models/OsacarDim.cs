@@ -8,6 +8,8 @@ namespace Etl.Data.Models
         public int Id { get; set; }
         public int CategoryId { get; set; }
         public bool Winner { get; set; }
+        public int CeremonyNum { get; set; }
+        public int CeremonyYear { get; set; }
 
         public virtual CategoryDim Category { get; set; }
     }
